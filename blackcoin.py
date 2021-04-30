@@ -21,7 +21,7 @@ import requests
 from uuid import uuid4
 from urllib.parse import urlparse
 
-# Part 1 - Building a Blockchain
+# first Part - Building a Blockchain
 
 class Blockchain:
 
@@ -103,7 +103,7 @@ class Blockchain:
             return True
         return False
 
-# Part 2 - Mining our Blockchain
+# Second Part - Mining our Blockchain
 
 # Creating a Web App
 app = Flask(__name__)
@@ -159,7 +159,7 @@ def add_transaction():
     response = {'message': f'This transaction will be added to Block {index}'}
     return jsonify(response), 201
 
-# Part 3 - Decentralizing our Blockchain
+# Third Part - Decentralizing our Blockchain
 
 # Connecting new nodes
 @app.route('/connect_node', methods = ['POST'])
